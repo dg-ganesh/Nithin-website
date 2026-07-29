@@ -1,0 +1,1489 @@
+/* =====================================================
+   AB Dentist Website
+   Global Styles
+   Version 2.0
+   ===================================================== */
+
+/* =====================================================
+   Design System
+   ===================================================== */
+
+/* =====================================================
+   DESIGN SYSTEM
+===================================================== */
+
+:root{
+
+    /* Brand Colors */
+
+    --primary-color:#0F4C81;
+
+    --secondary-color:#1E88E5;
+
+    --accent-color:#00ACC1;
+
+    /* Background */
+
+    --background-color:#F8FAFC;
+
+    --surface-color:#FFFFFF;
+
+    /* Typography */
+
+    --heading-color:#1F2937;
+
+    --text-color:#4B5563;
+
+    --light-text:#6B7280;
+
+    /* Borders */
+
+    --border-color:#E5E7EB;
+
+    /* Shadows */
+
+    --shadow-small:
+        0 5px 15px rgba(0,0,0,.08);
+
+    --shadow-medium:
+        0 10px 30px rgba(0,0,0,.10);
+
+    --shadow-large:
+        0 18px 40px rgba(0,0,0,.15);
+
+    /* Border Radius */
+
+    --radius-small:8px;
+
+    --radius-medium:16px;
+
+    --radius-large:20px;
+
+    /* Animation */
+
+    --transition:0.3s ease;
+
+    /* Layout */
+
+    --max-width:1200px;
+
+}
+
+/* =====================================================
+   Reset
+   ===================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    margin:0;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:var(--background-color);
+
+    color:var(--text-color);
+
+    line-height:1.7;
+
+}
+
+/* =====================================================
+   Links
+   ===================================================== */
+
+a{
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+/* =====================================================
+   Images
+   ===================================================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* =====================================================
+   Layout
+   ===================================================== */
+
+main{
+
+    width:90%;
+
+    max-width:var(--max-width);
+
+    margin:50px auto;
+
+}
+
+/* =====================================================
+   Header
+   ===================================================== */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:var(--primary-color);
+
+    color:#ffffff;
+
+    padding:18px 40px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+}
+
+/* =====================================================
+   Clinic Name
+   ===================================================== */
+
+header h1{
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+    letter-spacing:1px;
+
+}
+
+/* =====================================================
+   Navigation
+   ===================================================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+nav a{
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+}
+
+nav a:hover{
+
+    background:rgba(255,255,255,.18);
+
+}
+
+/* =====================================================
+   Section Cards
+   ===================================================== */
+
+section{
+
+    background:var(--surface-color);
+
+    padding:45px;
+
+    margin-bottom:35px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+section h2{
+
+    color:var(--heading-color);
+
+    margin-bottom:22px;
+
+    font-size:30px;
+
+}
+
+section p{
+
+    margin-bottom:18px;
+
+    font-size:17px;
+
+}
+
+/* ===== PART 2 CONTINUES BELOW ===== */
+
+/* =====================================================
+   Lists
+   ===================================================== */
+
+ul{
+
+    padding-left:25px;
+
+}
+
+li{
+
+    margin-bottom:12px;
+
+}
+
+/* =====================================================
+   Forms
+   ===================================================== */
+
+form{
+
+    margin-top:20px;
+
+}
+
+label{
+
+    display:block;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:20px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:var(--transition);
+
+}
+
+input:focus,
+textarea:focus{
+
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 6px rgba(0,119,182,.25);
+
+}
+
+button{
+
+    background:var(--primary-color);
+
+    color:#ffffff;
+
+    border:none;
+
+    padding:14px 28px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+button:hover{
+
+    background:var(--secondary-color);
+
+    transform:translateY(-2px);
+
+}
+
+/* =====================================================
+   Footer
+   ===================================================== */
+
+footer{
+
+    background:var(--primary-color);
+
+    color:#ffffff;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:50px;
+
+}
+
+/* =====================================================
+   Utility Classes
+   ===================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:var(--max-width);
+
+    margin:0 auto;
+
+}
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mt-40{
+
+    margin-top:40px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.mb-40{
+
+    margin-bottom:40px;
+
+}
+
+/* =====================================================
+   Responsive
+   ===================================================== */
+
+@media (max-width:768px){
+
+    header{
+
+        padding:20px;
+
+    }
+
+    header h1{
+
+        font-size:28px;
+
+    }
+
+    nav{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    section{
+
+        padding:25px;
+
+    }
+
+    section h2{
+
+        font-size:24px;
+
+    }
+
+    main{
+
+        width:95%;
+
+    }
+
+}
+
+/* =====================================================
+   Premium Header
+===================================================== */
+
+.site-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:var(--surface-color);
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+}
+
+.header-container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo h1{
+
+    color:#0077b6;
+
+    font-size:32px;
+
+    margin:0;
+
+}
+
+.logo span{
+
+    display:block;
+
+    color:var(--light-text);
+
+    font-size:13px;
+
+    margin-top:4px;
+
+}
+
+.site-header nav{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.site-header nav a{
+
+    color:#333;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    padding:8px 0;
+
+    transition:var(--transition);
+
+    border-bottom:3px solid transparent;
+
+}
+
+.site-header nav a:hover{
+
+    color:#0077b6;
+
+    border-color:#0077b6;
+
+}
+
+.site-header nav a.active{
+
+    color:#0077b6;
+
+    border-color:#0077b6;
+
+}
+
+/* =====================================================
+   Premium Hero Section
+===================================================== */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding:80px 0;
+
+}
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.hero-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    background:#e8f7ff;
+
+    color:#0077b6;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.hero h2{
+
+    font-size:52px;
+
+    line-height:1.2;
+
+    color:var(--heading-color);
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:19px;
+
+    color:#555;
+
+    margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.secondary-btn{
+
+    background:var(--surface-color);
+
+    color:#0077b6;
+
+    border:2px solid #0077b6;
+
+}
+
+.secondary-btn:hover{
+
+    background:#0077b6;
+
+    color:white;
+
+}
+
+/* =====================================================
+   IMAGE PLACEHOLDERS
+===================================================== */
+
+.hero-image{
+
+    width:100%;
+
+    max-width:550px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow-large);
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.doctor-image{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:block;
+
+    box-shadow:var(--shadow-small);
+
+}
+
+.patient-photo{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:block;
+
+    box-shadow:var(--shadow-small);
+
+}
+
+/* =====================================================
+   Why Choose Us
+===================================================== */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.feature-card{
+
+    background:var(--surface-color);
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.feature-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:#e8f7ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:36px;
+
+}
+
+.feature-card h3{
+
+    color:var(--heading-color);
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+/* =====================================================
+   Premium Services
+===================================================== */
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.service-card{
+
+    background:var(--surface-color);
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+.service-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:#e8f7ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:36px;
+
+}
+
+.service-card h3{
+
+    margin-bottom:15px;
+
+    color:var(--heading-color);
+
+}
+
+.service-card p{
+
+    color:var(--light-text);
+
+    margin-bottom:25px;
+
+}
+
+.service-btn{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    background:#0077b6;
+
+    color:#ffffff;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.service-btn:hover{
+
+    background:#005f8f;
+
+}
+
+/* =====================================================
+   Meet Our Doctors
+===================================================== */
+
+.doctors-section{
+
+    margin:90px 0;
+
+}
+
+/* =====================================================
+   SECTION HEADINGS
+===================================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+    font-size:38px;
+
+    color:var(--heading-color);
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--light-text);
+
+    line-height:1.8;
+
+}
+
+.doctor-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.doctor-card{
+
+    background:var(--surface-color);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-medium);
+
+    transition:var(--transition);
+
+}
+
+.doctor-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+.doctor-image{
+
+    width:180px;
+
+    height:180px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#e8f7ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#0077b6;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+.doctor-card h3{
+
+    color:var(--heading-color);
+
+    margin-bottom:8px;
+
+}
+
+.doctor-card h4{
+
+    color:#0077b6;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.doctor-card p{
+
+    color:var(--light-text);
+
+    margin-bottom:25px;
+
+}
+
+.doctor-btn{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    background:#0077b6;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    transition:var(--transition);
+
+}
+
+.doctor-btn:hover{
+
+    background:#005f8f;
+
+}
+
+/* =====================================================
+   Clinic Statistics
+===================================================== */
+
+.statistics-section{
+
+    margin:90px 0;
+
+    background:linear-gradient(135deg,#0077b6,#023e8a);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.statistics-overlay{
+
+    padding:70px 40px;
+
+}
+
+.statistics-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    text-align:center;
+
+}
+
+.stat-card{
+
+    color:#ffffff;
+
+}
+
+.stat-card h2{
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.stat-card p{
+
+    font-size:18px;
+
+    opacity:.9;
+
+}
+
+/* =====================================================
+   Testimonials
+===================================================== */
+
+.testimonials-section{
+
+    margin:90px 0;
+
+}
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+    margin-top:45px;
+
+}
+
+.testimonial-card{
+
+    background:var(--surface-color);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-medium);
+
+    transition:var(--transition);
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+.patient-photo{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    background:#e8f7ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#0077b6;
+
+    font-weight:bold;
+
+}
+
+.stars{
+
+    color:#f4b400;
+
+    font-size:22px;
+
+    margin:15px 0;
+
+}
+
+.testimonial-card p{
+
+    color:var(--light-text);
+
+    line-height:1.7;
+
+}
+
+/* =====================================================
+   Appointment CTA
+===================================================== */
+
+.appointment-cta{
+
+    margin:90px 0;
+
+    background:linear-gradient(135deg,#0096c7,#023e8a);
+
+    border-radius:20px;
+
+    padding:80px 40px;
+
+    text-align:center;
+
+    color:#ffffff;
+
+}
+
+.cta-content{
+
+    max-width:750px;
+
+    margin:auto;
+
+}
+
+.cta-content h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.cta-content p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+    opacity:.95;
+
+}
+
+.cta-button{
+
+    display:inline-block;
+
+    padding:16px 36px;
+
+    background:var(--surface-color);
+
+    color:#0077b6;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    border-radius:10px;
+
+    transition:var(--transition);
+
+}
+
+.cta-button:hover{
+
+    background:#caf0f8;
+
+    transform:translateY(-3px);
+
+}
+
+/* =====================================================
+   Premium Footer
+===================================================== */
+
+.site-footer{
+
+    background:#023047;
+
+    color:#ffffff;
+
+    margin-top:80px;
+
+}
+
+.footer-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:60px 30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:40px;
+
+}
+
+.footer-column h3{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+.footer-column p{
+
+    color:#d7e3ea;
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+
+}
+
+.footer-column ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.footer-column li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-column a{
+
+    color:#d7e3ea;
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+.footer-column a:hover{
+
+    color:#90e0ef;
+
+}
+
+.social-icons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.social-icons a{
+
+    padding:8px 14px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:8px;
+
+}
+
+.social-icons a:hover{
+
+    background:#0077b6;
+
+    color:#ffffff;
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    padding:20px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    color:#c9d6df;
+
+}
+
+/* =====================================================
+   COMMON CARD STYLES
+===================================================== */
+
+.feature-card,
+.service-card,
+.doctor-card,
+.testimonial-card{
+
+    background:var(--surface-color);
+
+    border-radius:var(--radius-large);
+
+    box-shadow:var(--shadow-medium);
+
+    transition:var(--transition);
+
+    overflow:hidden;
+
+}
+
+.feature-card:hover,
+.service-card:hover,
+.doctor-card:hover,
+.testimonial-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-large);
+
+}
+
+/* =====================================================
+   STANDARD BUTTONS
+===================================================== */
+
+button,
+.service-btn,
+.doctor-btn,
+.cta-button{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:var(--radius-small);
+
+    background:var(--primary-color);
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+button:hover,
+.service-btn:hover,
+.doctor-btn:hover,
+.cta-button:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--secondary-color);
+
+}
+
+.feature-icon i,
+.service-icon i{
+
+    font-size:36px;
+
+    color:var(--primary-color);
+
+}   
+
+.footer-column i{
+
+    width:24px;
+
+    color:#90e0ef;
+
+    margin-right:10px;
+
+}
