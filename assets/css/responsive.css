@@ -1,0 +1,72 @@
+/* ===============================
+   Large Tablets
+================================= */
+@media (max-width: 1024px) {
+
+}
+
+/* ===============================
+   Tablets
+================================= */
+@media (max-width: 768px) {
+
+    /* ===========================
+       Hero Section
+    =========================== */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 500px;
+        margin: 30px auto 0;
+        display: block;
+    }
+    /* ===========================
+   Features Section
+=========================== */
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.feature-card {
+    width: 100%;
+}
+/* ===========================
+   Services Section
+=========================== */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.service-card {
+    width: 100%;
+}
+
+}
+/* ===============================
+   Mobile Phones
+================================= */
+@media (max-width: 576px) {
+
+}
