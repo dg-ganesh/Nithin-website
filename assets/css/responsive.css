@@ -105,7 +105,36 @@ nav.active ul {
     gap: 20px;
     align-items: center;
 }
+/* ==========================================
+   Doctors Section
+========================================== */
 
+.doctor-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+}
+
+.doctor-card{
+    padding:24px;
+}
+
+.doctor-image{
+    width:160px;
+    height:160px;
+}
+
+.doctor-card h3{
+    font-size:1.4rem;
+}
+
+.doctor-card h4{
+    font-size:1rem;
+}
+
+.doctor-card p{
+    font-size:0.95rem;
+    line-height:1.7;
+}
 
 }
 /* ===============================
