@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("AB Dentist Website Loaded Successfully.");
 
     initializeStatisticsCounter();
+    initializeNavigation();
 
 });
 
@@ -83,11 +84,50 @@ function animateCounter(counter) {
 
 }
 
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector("header nav");
+function initializeNavigation() {
 
-if (menuToggle && nav) {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".primary-navigation");
+
+    if (!menuToggle || !navigation) {
+        return;
+    }
+
+    const closeNavigation = () => {
+        navigation.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+    };
+
+    const openNavigation = () => {
+        navigation.classList.add("is-open");
+        menuToggle.setAttribute("aria-expanded", "true");
+    };
+
     menuToggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
+        if (navigation.classList.contains("is-open")) {
+            closeNavigation();
+            return;
+        }
+
+        openNavigation();
+    });
+
+    navigation.addEventListener("click", (event) => {
+        if (event.target.closest("a")) {
+            closeNavigation();
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && navigation.classList.contains("is-open")) {
+            closeNavigation();
+            menuToggle.focus();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            closeNavigation();
+        }
     });
 }

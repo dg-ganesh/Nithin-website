@@ -25,24 +25,26 @@
 
     <!-- Header -->
 
-    <header>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>AB Dentist</h1>
+                <span>Healthy Smiles • Trusted Care</span>
+            </div>
 
-        <h1>AB Dentist Clinic</h1>
+            <button class="menu-toggle" type="button" aria-label="Toggle Navigation" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="menu-toggle__open" aria-hidden="true">☰</span>
+                <span class="menu-toggle__close" aria-hidden="true">×</span>
+            </button>
 
-        <nav>
-
-            <a href="../index.html">Home</a>
-
-            <a href="about.html">About</a>
-
-            <a href="services.html">Services</a>
-
-            <a href="gallery.html">Gallery</a>
-
-            <a href="contact.html">Contact</a>
-
-        </nav>
-
+            <nav id="primary-navigation" class="primary-navigation">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Content -->
