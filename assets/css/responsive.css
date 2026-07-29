@@ -63,6 +63,29 @@
     width: 100%;
 }
 
+/* ===========================
+   Mobile Navigation
+=========================== */
+
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: none;
+}
+
 }
 /* ===============================
    Mobile Phones
