@@ -463,7 +463,7 @@ footer{
 
 .site-header{
 
-    position:sticky;
+    position: relative;
 
     top:0;
 
